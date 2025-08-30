@@ -91,11 +91,11 @@ export default function Contato() {
           <ul className="space-y-4 mb-8">
             <li className="flex items-center gap-3 text-gray-700">
               <FaPhoneAlt className="text-sky-600" />
-              <span suppressHydrationWarning>(62) 99999-9999</span>
+              <span suppressHydrationWarning>(62) 98250-0300</span>
             </li>
             <li className="flex items-center gap-3 text-gray-700">
               <FaWhatsapp className="text-sky-600" />
-              <span suppressHydrationWarning>WhatsApp: (62) 99999-9999</span>
+              <span suppressHydrationWarning>WhatsApp: (62) 99173-5598</span>
             </li>
             <li className="flex items-center gap-3 text-gray-700">
               <FaEnvelope className="text-sky-600" />
