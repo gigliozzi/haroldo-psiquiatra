@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Head, Main, NextScript } from 'next/document';
+import Head from 'next/head';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -62,10 +63,32 @@ export default function RootLayout({
     <html lang="pt-BR">
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "MedicalClinic",
+              "name": "Clínica Especializada Dr. Haroldo Peixoto",
+              "url": "https://haroldopeixoto.com.br",
+              "logo": "https://haroldopeixoto.com.br/logo.png",
+              "description":
+                "Clínica de psiquiatria e psicoterapia localizada em Goiânia. Atendimento especializado em saúde mental com empatia, respeito e profissionalismo.",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "R. 10, 420 - St. Sul",
+                "addressLocality": "Goiânia",
+                "addressRegion": "GO",
+                "postalCode": "74080-420",
+                "addressCountry": "BR"
+              },
+              "openingHours": "Mo-Fr 08:00-18:00",
+              "telephone": "+55 62 99173-5598"
+            }),
+          }}
+        />
       </Head>
       <body className={inter.className}>{children}</body>
-      <Main />
-        <NextScript />
     </html>
   );
 }
