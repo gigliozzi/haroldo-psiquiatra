@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Clínica Especializada Dr. Haroldo Peixoto | Psiquiatria e Psicoterapia",
   description:
     "A Clínica Dr. Haroldo Peixoto oferece atendimento psiquiátrico e psicoterápico com excelência, empatia e profissionalismo. Especialista em saúde mental, qualidade de vida e bem-estar emocional.",
+    icons: {
+      icon: "/favicon.ico",
+    },
   keywords: [
     "psiquiatra",
     "psiquiatria",
